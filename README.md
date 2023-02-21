@@ -1,10 +1,11 @@
 # Netflix Landing Page Clone
 
 Click Here to see the Development Work 
+https://masterxevil.github.io/NetflixClone.github.io/
 
 ---
 
-This is My First Project for Web Development. Related to Web Development Tutorial Visit Here to See the Tutorial [Click Here]
+This is My First Project for Web Development. 
 ---
 ## Screenshots :
 
