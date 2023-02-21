@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+.navbarcontent {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    justify-content: space-between;
+    margin: 26px 55px;
+}
+
+.logobrand {
+    width: 13%;
+}
+
+.navbarcontent .logobrand img {
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.nav-items .language {
+    border-radius: 2px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    width: 101px;
+    height: 37px;
+    text-align: center;
+    padding: 1px 0px;
+}
+
+.language .globeimg img {
+    position: relative;
+    width: 15%;
+    margin: 9px -6px;
+    left: 2px;
+}
+
+.language p {
+    display: inline;
+    position: relative;
+    top: -10px;
+    left: 6px;
+    cursor: default;
+}
+
+.language .dropdown {
+    position: relative;
+    top: -9px;
+    right: -3px;
+}
+
+.nav-items .signinbtn {
+    border-radius: 2px;
+    width: 80px;
+    height: 38px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.backimg {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.backimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 60%, rgba(0, 0, 0, .8));
+}
+
+.content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 33%;
+    left: 25%;
+}
+
+.content h1 {
+    font-size: 65px;
+    letter-spacing: -3px;
+    font-family: var(--font-family)
+}
+
+.content h3 {
+    font-weight: 500;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.content p,
+.contentrepeat p {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 17px 0px;
+}
+
+.content input[type=text] {
+    color: rgb(140, 140, 164);
+    left: 0px;
+    position: absolute;
+    width: 70%;
+    height: 25%;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.content label {
+    background-color: rgb(244, 6, 18);
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    padding: 11px 0px;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content label:active {
+    background-color: rgb(167, 4, 12);
+    width: 30.5%;
+    height: 25.5%;
+}
+
+.content label::selection,
+.contentrepeat label::selection {
+    background-color: none;
+}
+
+.verticalbar {
+    height: 8px;
+    background-color: rgb(34, 34, 34);
+}
+
+.feature {
+    height: 430px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.feature-text h1 {
+    font-size: 49px;
+}
+
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 100px 50px;
+}
+.desc-1{
+  padding-left: 100px;
+  
+}
+.style-card h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+
+}
+
+.style-card p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+.card-1 video{
+    position: relative;
+    height: 58%;
+    width: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-left:-1%;
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;}
+
+
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 100px 50px;
+}
+
+.desc-3{
+    padding-left: 100px;
+}
+.card-3 video{
+    position: relative;
+    top: -75px;
+    left: 125px;
+    height: 78%;
+    width: 60%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    /* margin-left: 15%; */
+}
+
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+
+.card-3{
+    border-top: 8px solid #111;
+    padding: 50px;
+    color: #fff;}
+
+
+.feature-text p {
+    font-size: 25px;
+    padding: 15px 0px;
+}
+
+.feature-text {
+    width: 37%;
+    margin: 0px 214px;
+}
+
+.feature .feature-vid {
+    width: 38%;
+    margin: 0px 14px;
+}
+
+.feature-vid img {
+    width: 100%;
+}
+
+.feat2img {
+    width: 24%;
+    margin: 0px 122px;
+}
+
+.feat3img {
+    width: 37%;
+    margin: 0px 95px;
+}
+
+.feat4img {
+    width: 30%;
+    margin: 0px 52px;
+    position: relative;
+    z-index: 1;
+}
+
+.faq {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+.faq h1 {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.faqitems {
+    margin: 40px auto;
+}
+
+.faqitems ul {
+    list-style: none;
+}
+
+.faqitems .faqquestion {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 20px 32px;
+    cursor: pointer;
+    font-size: 28px;
+    gap: 145px;
+    left: 22%;
+    position: relative;
+    width: 53%;
+}
+
+.faqcontent {
+    text-align: left;
+    display: none;
+}
+
+.contentrepeat input[type=text] {
+    color: rgb(140, 140, 164);
+    padding: 23px 10px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 36%;
+}
+
+.contentrepeat label {
+    background-color: rgb(244, 6, 18);
+    position: relative;
+    right: 0px;
+    width: 13%;
+    height: 73%;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+.contentrepeat label:active {
+    background-color: rgb(167, 4, 12);
+    width: 13.5%;
+    height: 73.5%;
+}
+
+footer {
+    margin: 0px 20%;
+}
+
+.footer-content {
+    margin-top: 8%;
+    color: hsl(52, 19%, 38%);
+    font-weight: 600;
+}
+
+.footer-content .calllink {
+    text-decoration: none;
+    color: hsl(52, 19%, 38%);
+}
+
+.footer-content .calllink:hover,
+.flink:hover {
+    text-decoration: solid underline hsl(52, 19%, 38%) 1.3px;
+}
+
+.footer-content .links {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 13px;
+    row-gap: 20%;
+}
+
+.flink>a {
+    color: hsl(52, 19%, 38%);
+    text-decoration: none;
+}
+
+.languagebtn {
+    width: 150px;
+    position: relative;
+    margin-top: 73px;
+    border: 1px solid hsl(52, 19%, 38%);
+    border-radius: 3px;
+    padding: 19px 11px;
+}
+
+.languagebtn .globeimg {
+    width: 23px;
+    display: inline-block;
+}
+
+.languagebtn .globeimg img {
+    width: 100%;
+}
+
+.languagebtn p {
+    padding: 28px 10px;
+    position: absolute;
+    top: -10px;
+    left: 36px;
+}
+
+.languagebtn .dropdown {
+    position: relative;
+    top: -5px;
+    right: -78px;
+}
+
+.made {
+    margin: 18px 0px;
+    font-size: 13px;
+}
