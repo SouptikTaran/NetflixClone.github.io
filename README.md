@@ -1,7 +1,7 @@
 # Netflix Landing Page Clone
 
 Click Here to see the Development Work 
-https://masterxevil.github.io/NetflixClone.github.io/
+https://souptiktaran.github.io/NetflixClone.github.io/
 
 ---
 
